@@ -193,7 +193,22 @@ function __doPostBack(eventTarget, eventArgument) {
 
 								
 								
-<img src="BotDetectCaptcha.png" alt="CAPTCHA" width="100" height="50" />
+<div class="LBD_CaptchaDiv" id="c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha_CaptchaDiv" style="width: 130px !important; height: 50px !important;">
+  <div class="LBD_CaptchaImageDiv" id="c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha_CaptchaImageDiv" style="width: 100px !important; height: 50px !important;">
+    <img class="LBD_CaptchaImage" id="c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha_CaptchaImage" src="Imagenes/BotDetectCaptcha.png" alt="CAPTCHA" />
+  </div>
+  <div class="LBD_CaptchaIconsDiv" id="c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha_CaptchaIconsDiv" style="width: 24px !important;">
+    <a class="LBD_ReloadLink" id="c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha_ReloadLink" href="#" onclick="c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha.ReloadImage(); this.blur(); return false;" title="Change the CAPTCHA code">
+      <img class="LBD_ReloadIcon" id="c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha_ReloadIcon" src="/BotDetectCaptcha.ashx?get=ReloadIcon" alt="Change the CAPTCHA code" />
+    </a>
+  </div>
+  <script src="/BotDetectCaptcha.ashx?get=clientScriptInclude" type="text/javascript"></script>
+  <script type="text/javascript">
+    //<![CDATA[
+      BotDetect.Init('c_valqr_validacons_ctl00_leftcolumn_loginuser_logincaptcha', '225d3bb214b2463f97ee1f7abb5b49e8', null, true, true, true, true, 1200, 7200, 0, true);
+    //]]>
+  </script>
+</div>
 
 								
 
